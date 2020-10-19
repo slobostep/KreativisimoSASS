@@ -1,0 +1,38 @@
+.btn
+    background: $color-two
+    color: $color-text
+    font-size: 1em
+    text-transform: uppercase
+    border-radius: 20px 20px 20px 20px
+    padding: 8px 12px
+    transition:  .3s ease-in-out
+    cursor: pointer
+    border: 2px solid $color-text
+    outline: none
+
+    &:hover
+        background: $color-one
+        transform: scale(1.05)
+
+@mixin iconchange 
+    transition: .2s ease-in-out
+
+.fa-phone-square
+    @include iconchange()
+
+    &:hover
+        color: #11803c
+    
+.fa-instagram-square
+    @include iconchange()
+
+    &:hover 
+        color: #c42d91
+        cursor: pointer
+    
+.fa-facebook-square
+    @include iconchange()
+
+    &:hover
+        color: #3b5998
+        cursor: pointer

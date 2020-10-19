@@ -1,0 +1,88 @@
+.header
+    background: $color-text
+    padding: .2em 0
+    filter:  drop-shadow(0px 1px 0 $color-one) 
+    position: sticky
+    top: 0
+    z-index: 1000
+
+    &-wrapper
+        display: flex
+        justify-content: space-between
+        align-items: center
+        height: 5vh
+    
+    .logo
+        width: 90px
+        height: 90px
+        position: absolute
+        top: 0
+        left: 50%
+        transform: translate(-50%)
+        
+        img
+            max-width: 100%
+            max-height: 100%
+            cursor: pointer
+            filter:  drop-shadow(0px 1px 0 $color-text) 
+ 
+    .hamburger
+        position: relative
+        width: 30px
+        height: 30px
+        cursor: pointer
+        display: none
+
+        &:before
+            content: ''
+            position: absolute
+            top: 7px
+            width: 100%
+            height: 2px
+            background: $color-one
+        
+        &:after
+            content: ''
+            position: absolute
+            bottom: 7px
+            width: 100%
+            height: 2px
+            background: $color-one
+
+    .menu
+        width: 100%
+        margin: 0 auto
+
+        ul
+            display: block
+            list-style: none
+            text-align: right
+            margin: 0
+            width: 100%
+        
+
+            li
+                float: none
+                display: inline-block 
+                transition: 0.25s ease-in-out
+
+                &:nth-child(1)
+                    float: left
+                &:nth-child(2)
+                    float: left
+                &:nth-child(3)
+                    float: left
+                a
+                    display: block
+                    font-size: 20px
+                    font-weight: bold
+                    font-family: $font-title
+                    color: $color-one
+                    text-decoration: none
+                    transition: 0.25s ease-in-out
+                    text-transform: uppercase
+                    padding: 5px 20px
+
+                    &:hover 
+                        color: $color-three
+                    

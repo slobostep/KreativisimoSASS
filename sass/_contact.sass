@@ -1,0 +1,75 @@
+
+.contact
+    margin-top: 3em
+    padding: 150px 0
+    height: 100%
+    background-image:  linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.6)),url('/img/main3.jpg')
+    background-size: cover
+    background-position: right bottom 
+    background-repeat: no-repeat
+    background-attachment: fixed 
+    color: $color-text
+
+    .contact-wrapper
+        text-align: left
+        height: 100%
+        display: flex
+        justify-content: center
+        align-items: center
+
+        .contact-wrapper-order
+            flex-basis: 60%
+
+            h1
+                font-size: 2em
+                margin-bottom: .5em
+                font-weight: 1.5em
+                text-transform: uppercase
+                font-family: $font-title
+            a
+                font-weight: 700
+                color: $color-text
+                text-decoration: none
+                transition: .2s ease-in-out
+
+        .contact-form-wrapper
+            flex-basis: 40%
+            text-align: center
+
+            .contact-form
+                padding-left: 2em 
+                text-align: left
+                display: flex
+                flex-direction: column
+
+                label 
+                    display: block
+                    font-size: .8em
+                p
+                    margin: .2em
+                    font-family: $font-pharagraph
+
+                button ,  input ,  textarea 
+                    width: 100%
+                    padding: 1em
+                    margin-bottom: 1em
+                    border: 1px solid $color-two
+                    border-radius: 0 $border-radious $border-radious $border-radious
+
+                    &:focus
+
+                        color: $color-two
+                        outline: none
+                  
+                button
+                    color: $color-text
+                    font-weight: 600
+                    border: 2px solid $color-text
+                    border-radius:  $border-radious
+                    transition: .2s ease-in-out
+                    background: $color-one
+                    text-transform: uppercase
+
+                    &:hover 
+                        background: $color-two
+                        transform: scale(1.02)
